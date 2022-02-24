@@ -257,7 +257,7 @@ a.nav-link:hover {
 	
 	/*form in donate */
 	#customFormDonate{
-		margin-left: 2.2em;
+		margin-left: 2.5em;
 	}
 	
 }

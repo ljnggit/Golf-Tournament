@@ -98,8 +98,7 @@ h3 {
 {
 	margin-top: 1.5em;
 	text-transform: uppercase;
-background-color: #17f9f2;
-background-image: linear-gradient(320deg, #17f9f2 0%, #b0f9a9 84%);
+	background-image: linear-gradient(to right top, #ffffff, #f3faff, #d7f9ff, #b2faff, #8efbff, #6eecfb, #48ddf8, #00cef5, #00aaf4, #0083ee, #0058dc, #0a1eb7);
 	background-size: auto auto;
 	background-clip: border-box;
 	background-size: 200% auto;
