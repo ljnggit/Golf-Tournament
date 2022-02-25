@@ -30,7 +30,7 @@ a {
 
 /* --- This CSS is used in the about page. --- */
 .aboutPage{
-	 background-color: black;
+	background-color: black;
 }
 
 
@@ -259,7 +259,10 @@ a.nav-link:hover {
 		margin-left: 2.5em;
 	}
 	
+	a.nav-link{
+		text-align: center;
+	}
+	
 }
 
 /**/
-

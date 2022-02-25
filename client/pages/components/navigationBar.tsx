@@ -2,10 +2,8 @@
   Author: David Melnyk, Connor Mckail
   This navigation bar is used on most pages in the site, it is imported as a component at the top of the screen.
 */
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import Head from "next/head";
 ///////////////////////////////
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -43,7 +41,6 @@ export default function NavigationBar({
 
   const [numItems, setNumItems] = useState(0);
   const [initial, setInitial] = useState(true);
-
   useEffect(() => {
     let mounted = true;
     if (updateIcon || initial) {
@@ -64,6 +61,7 @@ export default function NavigationBar({
         })
         .catch((err) => console.error(err));
     }
+    
     return () => {
       mounted = false;
     };
@@ -71,7 +69,6 @@ export default function NavigationBar({
 
   return (
     //nav
-    
     <div>
       <nav className="navbar navbar-expand-lg">
         <a className="navbar-brand" href="/"> <img
@@ -82,7 +79,7 @@ export default function NavigationBar({
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon icon-bar"></span>
         </button>
-        <div className="collapse navbar-collapse">
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav" >
             <li className="nav-item active ">
               <a className="nav-link " href="/registration">Registration <span className="sr-only">(current)</span></a>
@@ -111,6 +108,7 @@ export default function NavigationBar({
           </ul>
         </div>
       </nav>
+
   </div>
   
 

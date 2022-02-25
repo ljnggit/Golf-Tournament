@@ -35,7 +35,10 @@ export default function Home() {
       <Head>
           <title>DEVELOPMENT - Dan Segin Golf Tournament Website</title>
           <link rel="icon" href="ddsm-logo.png" />
-      </Head>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
+     </Head>
       <NavigationBar />
        {/* The jumbotron is an image which is defined in globals.css */}
       <div className="container-fluid">
@@ -43,7 +46,7 @@ export default function Home() {
 
         <div className="row">
           <div className="jumbotron">
-            <h2 className={styles.title}>8TH ANNUAL Southwest Ontario Heart & Stroke</h2>        
+            <h2 className={styles.title}>9TH ANNUAL Southwest Ontario Heart & Stroke</h2>        
             <div className={styles.logoHeader}>
               <br></br>
               <img
@@ -70,7 +73,7 @@ export default function Home() {
 
         <div className='row'></div>
         <div className="row justify-content-md-center">
-          <div className="col col-lg-2"></div>
+          <div className="col"></div>
           <div className="col-md-auto">
             {/* The individual card components responsible for the bottom half of the landing page. */}
             <div className={styles.grid}>
@@ -167,7 +170,7 @@ export default function Home() {
 
             </div> {/*end grid */}
               </div>
-            <div className="col col-lg-2"></div>
+            <div className="col"></div>
         </div>
       </div>   
       {/* Footer */}
