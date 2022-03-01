@@ -137,7 +137,7 @@ export default function Home() {
       <div className="col-md-auto"></div>
         <div className="col-md-auto">
           <div className="shadow p-3 mb-5 bg-white rounded">
-            <div><img src='donate.png' width="950" height="290"/></div>
+            <div className='donationImgContainer'><img className='donationImg' src='donation.png'/></div>
             <div>
               <p className='customDonateText'>
                 Please feel free to make a donation to the Heart & Stroke Foundation.

@@ -67,6 +67,13 @@ a {
 #customBtnFormDonate{
 	text-align: center;
 }
+.donationImgContainer{
+	text-align: center;	
+}
+
+.donationImg{
+	max-width: 100%;
+}
 
 
 #customFormDonate{
@@ -258,6 +265,7 @@ a.nav-link:hover {
 	#customFormDonate{
 		margin-left: 2.5em;
 	}
+	
 	
 	a.nav-link{
 		text-align: center;

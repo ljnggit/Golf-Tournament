@@ -30,7 +30,7 @@ a {
 
 /* --- This CSS is used in the about page. --- */
 .aboutPage{
-	 background-color: black;
+	background-color: black;
 }
 
 
@@ -66,6 +66,13 @@ a {
 }
 #customBtnFormDonate{
 	text-align: center;
+}
+.donationImgContainer{
+	text-align: center;	
+}
+
+.donateImg{
+	max-width: 100%;
 }
 
 
@@ -258,6 +265,7 @@ a.nav-link:hover {
 	#customFormDonate{
 		margin-left: 2.5em;
 	}
+	
 	
 	a.nav-link{
 		text-align: center;
