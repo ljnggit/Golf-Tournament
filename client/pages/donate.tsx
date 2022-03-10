@@ -17,6 +17,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import axios from "../utils/axios";
 import IDonationView from "@local/shared/view-models/donation";
 import { TextField } from "@material-ui/core";
+const validator = require("email-validator");
 
 const promise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY!);
 const useStyles = makeStyles((theme) => ({
@@ -53,7 +54,7 @@ export default function Home() {
   /* Handles the email changed event */
   const handleEmail = (event: React.ChangeEvent<{ value: string }>) => {
     setEmail(event.target.value);
-    setEmailError(!event.target.value.trim());
+    setEmailError(!event.target.value.trim() );
   };
     /* Handles the amount changed event */
   const handleAmountInput = (event: React.ChangeEvent<{ value: string }>) => {
@@ -196,6 +197,7 @@ export default function Home() {
                     className="standard-required"
                     value={email}
                     placeholder="Email"
+                    type='email'
                     label="Email"
                     error={emailError}
                     helperText={emailError && "Please Enter Email"}
@@ -216,7 +218,8 @@ export default function Home() {
                       !!firstName.trim() &&
                       !!lastName.trim() &&
                       !!amount &&
-                      !!email.trim()
+                      !!email.trim()&&
+                      validator.validate(email)
                     )
                   }
                   onClick={handleClick}
